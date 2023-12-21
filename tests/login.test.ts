@@ -19,4 +19,11 @@ test("Login test demo", async () => {
   await page.click("input[value='Login']");
 
   await page.waitForTimeout(5000);
+
+  const newContext = await browser.newContext();
+  const newPage = await newContext.newPage();
+
+  await newPage.goto("https://ecommerce-playground.Lambdatest.io/");
+
+  await newPage.waitForTimeout(5000);
 });

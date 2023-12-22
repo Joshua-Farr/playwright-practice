@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "reporter": [
@@ -28,7 +28,7 @@
       [
         "html",
         {
-          "open": "never"
+          "open": "always"
         }
       ]
     ],
@@ -41,7 +41,7 @@
       {
         "outputDir": "C:/Users/Josh/Documents/playwright-practice/test-results",
         "repeatEach": 1,
-        "retries": 2,
+        "retries": 0,
         "id": "",
         "name": "",
         "testDir": "C:/Users/Josh/Documents/playwright-practice/tests",
@@ -59,6 +59,62 @@
     "webServer": null
   },
   "suites": [
+    {
+      "title": "basicinteractons.test.ts",
+      "file": "basicinteractons.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 706,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Please enter your Message\n"
+                    },
+                    {
+                      "text": "Before entering data: \n"
+                    },
+                    {
+                      "text": "After entering data:  \n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-12-22T18:32:03.745Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Josh\\Documents\\playwright-practice\\test-results\\basicinteractons-\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "633691efc2c5c50a375c-96f439f2831debca2e88",
+          "file": "basicinteractons.test.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
     {
       "title": "login.test.ts",
       "file": "login.test.ts",
@@ -78,15 +134,26 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "status": "passed",
-                  "duration": 12917,
+                  "duration": 13138,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-12-22T17:49:33.428Z",
-                  "attachments": []
+                  "startTime": "2023-12-22T18:32:03.744Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Josh\\Documents\\playwright-practice\\test-results\\login-Login-test-demo\\test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Josh\\Documents\\playwright-practice\\test-results\\login-Login-test-demo\\test-finished-2.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -102,9 +169,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-12-22T17:49:33.156Z",
-    "duration": 13295.79,
-    "expected": 1,
+    "startTime": "2023-12-22T18:32:03.408Z",
+    "duration": 13581.266,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

@@ -4,7 +4,7 @@ const config: PlaywrightTestConfig = {
   testDir: "./tests",
   use: {
     headless: false,
-    screenshot: "only-on-failure",
+    screenshot: "on",
     video: "retain-on-failure",
   },
   retries: 0, // If there is a failure, it will try X more times
@@ -19,7 +19,7 @@ const config: PlaywrightTestConfig = {
     [
       "html", //Creates webpage with html output describing test results
       {
-        open: "never",
+        open: "always",
       },
     ],
   ],

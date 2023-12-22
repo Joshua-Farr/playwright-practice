@@ -1,0 +1,112 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Josh\\Documents\\playwright-practice\\playwright.config.ts",
+    "rootDir": "C:/Users/Josh/Documents/playwright-practice/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Josh/Documents/playwright-practice/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/Josh/Documents/playwright-practice/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.40.1",
+    "workers": 10,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login.test.ts",
+      "file": "login.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login test demo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 12917,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-12-22T17:49:33.428Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "12975f3ff1f884ffbbdd-1a5ba6a27466929a55a5",
+          "file": "login.test.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2023-12-22T17:49:33.156Z",
+    "duration": 13295.79,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
